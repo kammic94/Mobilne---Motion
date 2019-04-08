@@ -1,18 +1,13 @@
-	// The watch id references the current `watchAcceleration`
-    var watchID = null;
-
-    // Wait for Cordova to load
-    //
-    document.addEventListener("deviceready", onDeviceReady, false);
+	function init() {
 	
-    // Cordova is ready
-    //
+	document.addEventListener("deviceready",onDeviceReady, false);
+}
+    var watchID = null;
+	
     function onDeviceReady() {
         startWatch();
     }
 
-    // Start watching the acceleration
-    //
     function startWatch() {
 
         // Update acceleration every 3 seconds
