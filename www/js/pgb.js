@@ -1,19 +1,10 @@
-function init() {
-	
-document.addEventListener("deviceready",onDeviceReady, false);
-}
-
-
-function onDeviceReady() {
-	 console.log(navigator.accelerometer);
-}
-  // The watch id references the current `watchAcceleration`
+	// The watch id references the current `watchAcceleration`
     var watchID = null;
 
     // Wait for Cordova to load
     //
     document.addEventListener("deviceready", onDeviceReady, false);
-
+	
     // Cordova is ready
     //
     function onDeviceReady() {
